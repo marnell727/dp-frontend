@@ -1,0 +1,56 @@
+html,body {
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg,rgba(0, 0, 0, .85), rgba(0, 0, 0, .85));
+    padding: 20px;
+}
+
+nav img {
+}
+
+.hero {
+    margin-top: 114px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/cessnalight.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 850px;
+}
+
+.hero img {
+    height: 300px;
+    width: 300px;
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../images/cowboys2.webp);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+}
+
+.mission h1 {
+    font-size: 3rem;
+}
+
+.mission p {
+    line-height: 2rem;
+    padding: 50px;
+    font-size: 1.2rem;
+}
