@@ -1,0 +1,154 @@
+html,body {
+    margin: 0;
+}
+
+.landing-wrapper {
+    margin: 0;
+    padding: 0;
+    background: url(../images/bg-squares.png) black;
+    background-size: contain;
+    background-position-y: 600px;
+    color: white;
+    font-family: sans-serif;
+}
+
+navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px 2.5%;
+    align-items: center;
+}
+
+.nav-buttons {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-buttons img {
+    height: 30px;
+    width: 30px;
+}
+
+.banner-container {
+    background: url("../images/banner.svg"), black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+.slogan {
+    font-size: 3rem;
+    /* margin: auto; */
+}
+
+button.sign-up-button {
+    height: 39px;
+    width: 100px;
+    margin-top: 40px;
+    background-color: #FFC233;
+    border-radius: 20px;
+    border: none;
+}
+
+button.sign-up-button:hover {
+    background-color: #e4ac2b;
+}
+
+.feature-highlights-container {
+    display: flex;
+    justify-content: space-around;
+}
+.feature-highlights-container img {
+    height: 50px;
+}
+
+.feature-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    padding: 20px 50px;
+}
+.feature-header {
+    color: #14CC60;
+}
+
+.vl {
+    border-left: gray dotted;
+    border-width: 1px;
+    margin: 25px 2px;
+}
+
+.vl-long {
+    margin: 15px 2px;
+}
+
+.headline-container {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-align: center;
+    padding: 75px 0;
+}
+
+.horiz-cards-container {
+    /* margin: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+.horizontal-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-image {
+    height: 200px;
+    margin: 50px;
+}
+.card-image img {
+    height: 100%;
+}
+
+.card-content {
+    margin: 50px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card-header {
+    color: #14CC60;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+button.card-button {
+    height: 39px;
+    margin-top: 40px;
+    background-color: black;
+    border: 1px solid #14CC60;
+    border-radius: 10px;
+    color: white;
+    width: 150px;
+    align-self: center;
+}
+
+button.card-button:hover {
+    background-color: #3E5168;
+}
+
+.right-align {
+    text-align: right;
+}
