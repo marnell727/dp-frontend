@@ -13,9 +13,6 @@ nav {
     padding: 20px;
 }
 
-nav img {
-}
-
 .hero {
     margin-top: 114px;
     display: flex;
@@ -46,7 +43,13 @@ nav img {
 }
 
 .mission h1 {
+    font-family: "Rye", serif;
     font-size: 3rem;
+}
+
+.mission i {
+    margin-top: 30px;
+    font-size: 2rem;
 }
 
 .mission p {
