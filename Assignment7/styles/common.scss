@@ -1,0 +1,121 @@
+$light: #bbf3ff;
+$dark: #8ae9ff;
+
+@mixin button {
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 5vw;
+    text-align: center;
+    
+    &:hover {
+        background-color: $dark;
+    }
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 85px;
+        background-color: $light;
+
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            margin: 30px;
+            
+            img {
+                height: 100%;
+            }
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            margin-right: 20px;
+
+            .nav-link {
+                text-decoration: none;
+                color: black;
+
+                .nav-button {
+                    @include button
+                }
+            }
+        }
+    }
+
+    .hero {
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/dunder-mifflin.jpeg);
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 3rem;
+        font-family: 'Special Elite', cursive;
+    }
+
+    .feature-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5vw;
+
+        .feature-text-container {
+            margin: 5vw;
+            width: 40vw;
+        }
+        .feature-image-wrapper {
+            height: 250px;
+            width: 40vw;
+            background-image: url(../images/paper.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+            box-shadow: -1px 1px 5px black, -8px 8px $dark;
+
+            &.reverse {
+                background-image: url(../images/our-people.png);
+                box-shadow: 1px 1px 5px black, 8px 8px $dark;
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+        background-color: $light;
+
+        .footer-links {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            align-items: center;
+
+            .footer-link {
+                text-decoration: none;
+                color: black;
+
+                .footer-button {
+                    @include button;
+                    padding: 5px 50px;
+                    font-size: .75rem;
+                }
+            }
+        }
+    }
+}

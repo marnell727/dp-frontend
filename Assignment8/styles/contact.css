@@ -1,0 +1,339 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3c4858;
+}
+
+html .page-container,
+body .page-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 600px 1fr;
+      grid-template-rows: 600px 1fr;
+  height: 100%;
+}
+
+html .page-container .hero-container,
+body .page-container .hero-container {
+  color: white;
+}
+
+html .page-container .hero-container .nav-container,
+body .page-container .hero-container .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: white;
+  color: #3c4858;
+  padding: 10px 60px;
+  z-index: 3;
+  -webkit-box-shadow: 0px 1px 3px #333333;
+          box-shadow: 0px 1px 3px #333333;
+}
+
+html .page-container .hero-container .nav-container .logo,
+body .page-container .hero-container .nav-container .logo {
+  padding: 20px;
+}
+
+html .page-container .hero-container .nav-container .nav-links,
+body .page-container .hero-container .nav-container .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 0.65rem;
+}
+
+html .page-container .hero-container .nav-container .nav-links a,
+body .page-container .hero-container .nav-container .nav-links a {
+  text-decoration: none;
+  color: #3c4858;
+}
+
+html .page-container .hero-container .nav-container .nav-links a .nav-link,
+body .page-container .hero-container .nav-container .nav-links a .nav-link {
+  padding: 20px;
+}
+
+html .page-container .hero-container .nav-container .nav-links a .nav-link.more-button,
+body .page-container .hero-container .nav-container .nav-links a .nav-link.more-button {
+  padding: 20px;
+  font-size: 0.65rem;
+  background-color: #e91e63;
+  text-align: center;
+  border-radius: 30px;
+  color: white;
+}
+
+html .page-container .hero-container .nav-container .nav-links a .nav-link.more-button:hover,
+body .page-container .hero-container .nav-container .nav-links a .nav-link.more-button:hover {
+  background-color: #e47d9f;
+}
+
+html .page-container .hero-container .hero,
+body .page-container .hero-container .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  height: 100%;
+}
+
+html .page-container .hero-container .hero iframe,
+body .page-container .hero-container .hero iframe {
+  padding-top: 72px;
+  height: 100%;
+  width: 100%;
+}
+
+html .page-container .main-container,
+body .page-container .main-container {
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+}
+
+html .page-container .main-container .contact-container,
+body .page-container .main-container .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5%;
+}
+
+html .page-container .main-container .contact-container .message-form,
+body .page-container .main-container .contact-container .message-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40%;
+}
+
+html .page-container .main-container .contact-container .message-form h1,
+body .page-container .main-container .contact-container .message-form h1 {
+  margin-left: 3%;
+}
+
+html .page-container .main-container .contact-container .message-form form,
+body .page-container .main-container .contact-container .message-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html .page-container .main-container .contact-container .message-form form input,
+body .page-container .main-container .contact-container .message-form form input {
+  width: 100%;
+  margin: 10px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+html .page-container .main-container .contact-container .message-form form textarea,
+body .page-container .main-container .contact-container .message-form form textarea {
+  width: 100%;
+  margin: 10px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html .page-container .main-container .contact-container .message-form form a,
+body .page-container .main-container .contact-container .message-form form a {
+  text-decoration: none;
+}
+
+html .page-container .main-container .contact-container .message-form form a .contact-submit,
+body .page-container .main-container .contact-container .message-form form a .contact-submit {
+  padding: 20px;
+  font-size: 0.65rem;
+  background-color: #e91e63;
+  text-align: center;
+  border-radius: 3px;
+  color: white;
+  width: 30%;
+  margin-left: 3%;
+  margin-top: 20px;
+}
+
+html .page-container .main-container .contact-container .message-form form a .contact-submit:hover,
+body .page-container .main-container .contact-container .message-form form a .contact-submit:hover {
+  background-color: #e47d9f;
+}
+
+html .page-container .main-container .contact-container .contact-info,
+body .page-container .main-container .contact-container .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html .page-container .main-container .contact-container .contact-info .phone-address h2,
+body .page-container .main-container .contact-container .contact-info .phone-address h2 {
+  font-size: 1rem;
+}
+
+html .page-container .main-container .contact-container .contact-info .phone-address h2 i,
+body .page-container .main-container .contact-container .contact-info .phone-address h2 i {
+  margin-right: 3%;
+  color: #e91e63;
+}
+
+html .page-container .main-container .contact-container .contact-info .phone-address p,
+body .page-container .main-container .contact-container .contact-info .phone-address p {
+  color: #999999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+}
+
+html .page-container .main-container .footer,
+body .page-container .main-container .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: lightgray;
+  background-color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  padding: 30px 50px;
+}
+
+html .page-container .main-container .footer .footer-links,
+body .page-container .main-container .footer .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .page-container .main-container .footer .footer-links .footer-button,
+body .page-container .main-container .footer .footer-links .footer-button {
+  padding: 10px;
+  margin: 0 10px;
+}
+
+html .page-container .main-container .footer .footer-links .footer-button .footer-link,
+body .page-container .main-container .footer .footer-links .footer-button .footer-link {
+  color: lightgray;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-container {
+    display: block !important;
+  }
+  .hero-container .nav-container {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-container .nav-container .nav-links {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    padding-left: 5%;
+  }
+  .contact-container .message-form {
+    margin-bottom: 20% !important;
+    width: 90% !important;
+  }
+  .contact-container .contact-info {
+    padding-left: 8%;
+    width: 90% !important;
+    margin-bottom: 10% !important;
+  }
+  .footer {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    padding: 15px 50px !important;
+  }
+  .footer .footer-links {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
